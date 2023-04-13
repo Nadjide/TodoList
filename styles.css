@@ -6,26 +6,101 @@ body {
     height: 100vh;
     background-color: #f0f0f0;
 }
+
 #app {
     width: 300px;
     border: 1px solid #ccc;
     padding: 1rem;
     background-color: #fff;
 }
+
 input[type="text"] {
     width: 100%;
     padding: 0.5rem;
     margin-bottom: 1rem;
 }
+
+button {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+#taskCounter {
+    margin-bottom: 1rem;
+}
+
 ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
 }
+
 li {
-    padding: 0.5rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem;
     border-bottom: 1px solid #ccc;
 }
+
 li:last-child {
     border-bottom: none;
+}
+
+.completed {
+    text-decoration: line-through;
+}
+
+.delete-btn {
+    background-color: #f44336;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 50%;
+    padding: 0.2rem 0.5rem;
+    font-size: 0.8rem;
+}
+
+#filterButtons {
+    display: flex;
+    justify-content: space-between;
+}
+
+#filterButtons button {
+    width: auto;
+    background-color: #ccc;
+}
+
+#filterButtons button.active {
+    background-color: #4CAF50;
+}
+
+.complete-btn {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 50%;
+    padding: 0.2rem 0.5rem;
+    font-size: 0.8rem;
+    margin-right: 0.5rem;
+}
+
+.delete-btn {
+    background-color: #f44336;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 50%;
+    padding: 0.2rem 0.5rem;
+    font-size: 0.8rem;
 }

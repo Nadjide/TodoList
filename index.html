@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,11 +8,20 @@
     <link rel="stylesheet" href="style.css">
     <title>Todo-List</title>
 </head>
+
 <body>
     <div id="app">
         <input type="text" id="taskInput" placeholder="Entrez une nouvelle tâche...">
+        <button id="addTaskBtn">Ajouter</button>
+        <div id="taskCounter">0 tâches en cours</div>
         <ul id="taskList"></ul>
-        <script src="script.js"></script>
+        <div id="filterButtons">
+            <button id="filterAll">Toutes</button>
+            <button id="filterActive">En cours</button>
+            <button id="filterCompleted">Terminées</button>
+        </div>
     </div>
+    <script src="script.js"></script>       
 </body>
+
 </html>
