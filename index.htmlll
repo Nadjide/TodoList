@@ -12,7 +12,7 @@
 <body>
     <div id="app">
         <input type="text" id="taskInput" placeholder="Entrez une nouvelle tâche...">
-        <button id="addTaskBtn">Ajouter une tache</button>
+        <button id="addTaskBtn">Ajouter une nouvelle tache</button>
         <div id="taskCounter">0 tâches en cours</div>
         <ul id="taskList"></ul>
         <div id="filterButtons">
